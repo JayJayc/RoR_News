@@ -5,7 +5,7 @@ gem 'rails', '4.2.5'
 # Gem for bootstrap
 gem 'bootstrap-sass', '3.3.7'
 # Use postgres as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 10.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -39,9 +39,9 @@ group :development, :test do
   gem 'byebug'
 end
 
-group :production do
-  gem 'pg'
-end
+# group :production do
+#   gem 'pg'
+# end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
